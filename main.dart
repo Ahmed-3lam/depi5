@@ -1,11 +1,12 @@
 void main() {
 // DataType variableName ;                      Decleration
-
+  List<Car> forEachList = [];
 // DataType variableName  = value;
   List<int> myList = [2, 5, 56];
-  List<Car> newList = jsonFromBackend.map((e) => Car.fromJson(e)).toList();
-  print(newList[0].name);
 
+  myList.forEach((e) => e*2);
+  List<int> newList = myList.map((e) => e * 2).toList();
+  print(newList);
   // Map<String, dynamic> myMap = {"id": 1, "Price": 200};
   // myMap.forEach((key, value) {
   //   print("Value is $value");
