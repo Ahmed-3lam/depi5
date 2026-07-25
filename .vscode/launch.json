@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Daftra",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor",
+                "Daftra"
+            ],
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "DaftraDev",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor",
+                "DaftraDev"
+            ],
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "Enerpize",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor",
+                "Enerpize"
+            ],
+            "program": "lib/main.dart"
+        }
+    ]
+}
