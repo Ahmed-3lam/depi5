@@ -1,12 +1,12 @@
 void main() {
-  int number1 = 100;
-  final String result = number1 > 85
-      ? "Excellent"
-      : number1 > 75
-          ? "Very Good"
-          : number1 > 65
-              ? "Good"
-              : "Poor";
+  int number1 = 50;
+
+  String result = switch (number1) {
+    > 85 => "Excellent",
+    > 75 => "Very Good",
+    _ => "Poor"
+  };
+
   print(result);
 }
 
