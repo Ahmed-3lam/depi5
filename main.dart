@@ -1,8 +1,9 @@
 void main() {
-  //DataType variableName = value;
-  String name = "Ahmed";
-  var myName = "Mohamed";
+  dynamic name1 = "Ahmed";
+  dynamic number1 = 1234;
+  number1 = "12344";
+  var name2 = "Mohamed";
+  name1 = true;
 
-  myName = "Ahmed";
-  // Wrong myName = 1234;
+  print((name1 as String));
 }
