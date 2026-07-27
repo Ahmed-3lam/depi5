@@ -1,9 +1,7 @@
 void main() {
-  dynamic name1 = "Ahmed";
-  dynamic number1 = 1234;
-  number1 = "12344";
-  var name2 = "Mohamed";
-  name1 = true;
+  /// Final vs Const
+  const color1 = "0xFF998786";
 
-  print((name1 as String));
+  final color;
+  color = "";
 }
