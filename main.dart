@@ -1,7 +1,21 @@
 void main() {
-  /// Final vs Const
-  const color1 = "0xFF998786";
-
-  final color;
-  color = "";
+  int number1 = 10;
+  
+  if (number1 > 10) {
+    print("Excellent");
+  } else if (number1 == 10) {
+    print("Very Good");
+  } else if (number1 < 11) {
+    print("Poor ");
+  }
+  else {
+    print("Good");
+  }
+ 
+ 
 }
+
+
+///Conditions: IF - Else ......  Switch
+
+
