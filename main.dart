@@ -1,18 +1,13 @@
 void main() {
-  int number1 = 10;
-  
-  if (number1 > 10) {
-    print("Excellent");
-  } else if (number1 == 10) {
-    print("Very Good");
-  } else if (number1 < 11) {
-    print("Poor ");
-  }
-  else {
-    print("Good");
-  }
- 
- 
+  int number1 = 100;
+  final String result = number1 > 85
+      ? "Excellent"
+      : number1 > 75
+          ? "Very Good"
+          : number1 > 65
+              ? "Good"
+              : "Poor";
+  print(result);
 }
 
 
