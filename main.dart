@@ -1,24 +1,30 @@
+import 'dart:async';
+import 'dart:io';
+
 void main() {
-  printStudentDetails(12,"Ahmed", age: 20, address: "Monofia");
+  getDataFromServer();
 }
 
-/// Functions ( Void , Return)
+void getDataFromServer() {
+  print("Fetching....");
+  try {
+    throw SocketException("(1)Check your Internet ");
+    final response = ["product1", "product2"];
 
-void printStudentDetails(
-  int id,
-  String name, {
-  String? address = "default address",
-  required int age,
-}) {
-  print("Student ID : $id ");
-  print("Student Name : $name ");
-  if (address != null) print("Student Address : $address ");
-  print("Student Age : $age ");
+    print("response is : $response");
+  } on FormatException {
+    print("Format Exception");
+  } on TimeoutException {
+    print("(2)Check Your Internet");
+  } catch (e) {
+    print(e.toString());
+  } finally {
+    print("Final Handling");
+  }
 }
 
-// String getMyName(String name) {
-//   return name;
-// }
+
+
 
 
 
