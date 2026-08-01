@@ -1,16 +1,11 @@
 void main() {
-  int number1 = 50;
+  /// For , While , do while
+  List myList = ["Ahmed", "Mohamed", "Alaa"];
+  // for (int i = myList.length; i >= 0; i--) {
+  //   print(myList[i]);
+  // }
 
-  String result = switch (number1) {
-    > 85 => "Excellent",
-    > 75 => "Very Good",
-    _ => "Poor"
-  };
-
-  print(result);
+  for (var item in myList) {
+    print(item);
+  }
 }
-
-
-///Conditions: IF - Else ......  Switch
-
-
