@@ -1,11 +1,24 @@
 void main() {
-  /// For , While , do while
-  List myList = ["Ahmed", "Mohamed", "Alaa"];
-  // for (int i = myList.length; i >= 0; i--) {
-  //   print(myList[i]);
-  // }
+  String name = getMyName("Ahmed");
+  print(name);
 
-  for (var item in myList) {
-    print(item);
-  }
+  List myList;
 }
+
+/// Functions ( Void , Return)
+
+void printMyName(String name) {
+  print(name);
+}
+
+String getMyName(String name) {
+  return name;
+}
+
+
+
+
+
+
+
+/// PARAM: ( Named Params, UnNamed Params)
