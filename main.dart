@@ -1,19 +1,24 @@
 void main() {
-  String name = getMyName("Ahmed");
-  print(name);
-
-  List myList;
+  printStudentDetails(12,"Ahmed", age: 20, address: "Monofia");
 }
 
 /// Functions ( Void , Return)
 
-void printMyName(String name) {
-  print(name);
+void printStudentDetails(
+  int id,
+  String name, {
+  String? address = "default address",
+  required int age,
+}) {
+  print("Student ID : $id ");
+  print("Student Name : $name ");
+  if (address != null) print("Student Address : $address ");
+  print("Student Age : $age ");
 }
 
-String getMyName(String name) {
-  return name;
-}
+// String getMyName(String name) {
+//   return name;
+// }
 
 
 
