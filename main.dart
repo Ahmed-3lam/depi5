@@ -1,35 +1,9 @@
-import 'dart:async';
-import 'dart:io';
+import 'car.dart';
 
 void main() {
-  getDataFromServer();
+  ///VariableType variableName = Value;
+  Car car1 = Car(id: -2,color: "kkk"); // Constructor  Car()
+
+  // print(car1.id);
+  
 }
-
-void getDataFromServer() {
-  print("Fetching....");
-  try {
-    throw SocketException("(1)Check your Internet ");
-    final response = ["product1", "product2"];
-
-    print("response is : $response");
-  } on FormatException {
-    print("Format Exception");
-  } on TimeoutException {
-    print("(2)Check Your Internet");
-  } catch (e) {
-    print(e.toString());
-  } finally {
-    print("Final Handling");
-  }
-}
-
-
-
-
-
-
-
-
-
-
-/// PARAM: ( Named Params, UnNamed Params)
