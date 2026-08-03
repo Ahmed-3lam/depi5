@@ -1,9 +1,9 @@
 import 'car.dart';
+import 'color.dart';
+import 'const.dart';
 
 void main() {
-  ///VariableType variableName = Value;
-  Car car1 = Car(id: -2,color: "kkk"); // Constructor  Car()
+  Car car1 = Car();
+  Car car2 = Car();
 
-  // print(car1.id);
-  
 }
