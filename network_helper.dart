@@ -1,15 +1,21 @@
 class NetworkHelper {
   String? baseUrl = "www.google.com";
   String? token;
-  static NetworkHelper? instance = NetworkHelper._();
+  static NetworkHelper? _instance;
 
   NetworkHelper._();
 
- static void fetchData() {
+  static NetworkHelper? getInstance() {
+    if (_instance == null) {
+      _instance = NetworkHelper._();
+    }
+
+    return _instance;
+  }
+
+  void fetchData() {
     print("...Fetching Data ---- Loading");
   }
 
-  void postData(){
-    
-  }
+  void postData() {}
 }
