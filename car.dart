@@ -1,13 +1,9 @@
 class Car {
   int? id;
   String? color;
-  static int count = 0;
-  void moveForward() {
-    print("Move Forward");
-  }
+  Car();
 
-  Car() {
-    count++;
-    print(count);
+  Car.fromJson(Map json) {
+    id = json["id"];
   }
 }
