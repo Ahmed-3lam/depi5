@@ -1,40 +1,19 @@
+import 'animal.dart';
 import 'car.dart';
 import 'network_helper.dart';
 import 'post_model.dart';
 import 'product.dart';
 
 void main() {
-  List<PostModel> postModelList =
-      postList.map((item) => PostModel.fromMap(item)).toList();
-  // for (var item in postList) {
-  //   final post1 = PostModel.fromMap(item);
-  //   postModelList.add(post1);
-  // }
-
-  print(postModelList[0].title);
+  Dog dog1 = Dog("Dog1");
+  Lion lion1 = Lion("Lion1");
+  lion1.eat();
+  print("=============");
+  dog1.eat();
 }
 
-List<Map<String, dynamic>> postList = [
-  {
-    "userId": 1,
-    "id": 1,
-    "title":
-        "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body":
-        "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-  },
-  {
-    "userId": 1,
-    "id": 2,
-    "title": "qui est esse",
-    "body":
-        "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-  },
-  {
-    "userId": 1,
-    "id": 3,
-    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-    "body":
-        "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
-  },
-];
+
+/// (1) Encapsulation
+/// (2) Inheritance
+/// (3) Abstraction
+/// (4) Polymorphism
