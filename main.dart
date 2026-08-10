@@ -1,40 +1,40 @@
 import 'car.dart';
 import 'network_helper.dart';
+import 'post_model.dart';
 import 'product.dart';
 
 void main() {
-  List<Product> myProducts = jsonList.map((e) => Product.fromJson(e)).toList();
+  List<PostModel> postModelList =
+      postList.map((item) => PostModel.fromMap(item)).toList();
+  // for (var item in postList) {
+  //   final post1 = PostModel.fromMap(item);
+  //   postModelList.add(post1);
+  // }
 
-  print(myProducts);
+  print(postModelList[0].title);
 }
 
-List<Map<String, dynamic>> jsonList = [
+List<Map<String, dynamic>> postList = [
   {
-    "id": 2,
-    "name": "Samsung Galaxy S24",
-    "description": "Premium Android smartphone",
-    "price": 899.99,
-    "categoryId": 1,
-    "image":
-        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop",
-    "stock": 30,
-    "rating": 4.7,
-    "reviews": 987,
-    "brand": "Samsung",
-    "createdAt": "2024-01-10T09:00:00Z"
+    "userId": 1,
+    "id": 1,
+    "title":
+        "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body":
+        "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
   },
   {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body":
+        "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "userId": 1,
     "id": 3,
-    "name": "MacBook Air M3",
-    "description": "Ultra-thin laptop with M3 chip",
-    "price": 1299.99,
-    "categoryId": 1,
-    "image":
-        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop",
-    "stock": 25,
-    "rating": 4.9,
-    "reviews": 756,
-    "brand": "Apple",
-    "createdAt": "2024-01-08T14:30:00Z"
+    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    "body":
+        "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
   },
 ];
