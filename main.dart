@@ -1,11 +1,15 @@
-import 'string_extension.dart';
+import 'payment_methods_enum.dart';
 
 void main() {
-  String name = "Ahmed";
-  String email = "3lam.ahmeddgmail.com";
+  var paymentMethod = PaymentMethods.Cash;
 
-  print(name.isEmailValid());
-  print(email.isEmailValid());
+  if (paymentMethod ==PaymentMethods.Cash) {
+    print("Cash ");
+  }
+
+  if (paymentMethod == PaymentMethods.Cash) {
+    print("Cash Text");
+  }
 }
 
 /// Future
